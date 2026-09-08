@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Appleseed Audiobook MEG",
-  "description": "This dataset comprises magnetoencephalography (MEG) recordings from 12 participants listening to continuous narrative speech (an audiobook), along with an empty-room recording, stimulus files, and derivatives. The dataset was collected to investigate whether speech processing relies on local, context-independent representations or unified predictive models that integrate sentence-level context, examining neural signatures at the phoneme and word levels. Source localization analyses implicate bilateral superior temporal regions in these parallel predictive processes.",
-  "methods_description": "MEG data were recorded while participants listened to continuous narrative speech and were converted to BIDS format using MNE-BIDS with MNE-Python. MRI data are not subject-specific anatomical scans but are derived from the fsaverage template using subject-specific scaling parameters. Stimuli include audio, gammatone feature pickles, and Praat TextGrid annotations.",
+  "description": "This dataset contains magnetoencephalography (MEG) recordings from 12 participants listening to continuous narrative speech, along with an empty-room recording, stimulus files, and derivatives. The study investigates how listeners integrate local and unified predictive models during speech perception, examining neural signatures of contextual prediction at phoneme and sentence levels. Source localization analyses implicate bilateral superior temporal regions in these parallel predictive processes.",
+  "methods_description": "MEG data were recorded from 12 subjects listening to continuous narrative speech, with an accompanying empty-room recording. Data are stored in FIFF format and were processed using MNE-Python. MRI data were derived from the fsaverage template using subject-specific scaling parameters rather than individual anatomical scans.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -37,13 +37,19 @@
       "term": "predictive coding"
     },
     {
-      "term": "language processing"
-    },
-    {
       "term": "narrative speech"
     },
     {
+      "term": "phoneme processing"
+    },
+    {
       "term": "psycholinguistics"
+    },
+    {
+      "term": "source localization"
+    },
+    {
+      "term": "superior temporal gyrus"
     }
   ],
   "related_identifiers": [
@@ -71,6 +77,10 @@
   "funding_references": [
     {
       "funder_name": "NIH"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "R01DC014085"
     }
   ],
   "resource_type_general": "Dataset",
