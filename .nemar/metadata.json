@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Appleseed Audiobook MEG",
+  "description": "This dataset comprises magnetoencephalography (MEG) recordings from 12 participants listening to continuous narrative speech (an audiobook), along with an empty-room recording, stimulus files, and derivatives. The dataset was collected to investigate whether speech processing relies on local, context-independent representations or unified predictive models that integrate sentence-level context, examining neural signatures at the phoneme and word levels. Source localization analyses implicate bilateral superior temporal regions in these parallel predictive processes.",
+  "methods_description": "MEG data were recorded while participants listened to continuous narrative speech and were converted to BIDS format using MNE-BIDS with MNE-Python. MRI data are not subject-specific anatomical scans but are derived from the fsaverage template using subject-specific scaling parameters. Stimuli include audio, gammatone feature pickles, and Praat TextGrid annotations.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,12 +22,31 @@
     },
     "Lau, Ellen": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds007870.v1.3.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
+    {
+      "term": "Speech Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
+    },
+    {
+      "term": "predictive coding"
+    },
+    {
+      "term": "language processing"
+    },
+    {
+      "term": "narrative speech"
+    },
+    {
+      "term": "psycholinguistics"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.7554/elife.72056",
       "identifier_type": "DOI",
@@ -40,6 +61,11 @@
       "identifier": "https://nemar.org/dataset/on007870",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds007870.v1.3.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -48,12 +74,12 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "MEG Dataset",
   "modalities": [
     "meg"
   ],
-  "resource_type_specific": "MEG Dataset",
   "sizes": [
-    "36 B (1 files)"
+    "41.56 GB (167 files)"
   ],
   "formats": [
     ".TextGrid",
@@ -66,29 +92,5 @@
     ".tsv",
     ".yml"
   ],
-  "description": "This dataset contains magnetoencephalography (MEG) recordings from 12 participants listening to continuous narrative speech, along with an empty-room recording, stimulus files, and derivatives. The dataset was collected to investigate how listeners integrate local and unified predictive linguistic models during speech perception, examining neural signatures of context-dependent processing across the superior temporal lobes.",
-  "methods_description": "MEG data were recorded while participants listened to continuous narrative speech and stored in FIFF format, processed and converted to BIDS using MNE-Python and MNE-BIDS. MRI data are not subject-specific anatomical scans but derived from the fsaverage template using subject-specific scaling parameters.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "Speech Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
-    },
-    {
-      "term": "psycholinguistics"
-    },
-    {
-      "term": "predictive coding"
-    },
-    {
-      "term": "narrative speech"
-    },
-    {
-      "term": "superior temporal lobe"
-    }
-  ],
-  "source_hash": "61c755e8986e6928783559ac93346c8dbd41f719cfad94839e73561aefe1304a"
+  "source_hash": "210b240d08c7a4fe10211b9e3719c9a90dd6289570dad7ad3a4134244cedfab7"
 }
