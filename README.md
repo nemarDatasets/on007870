@@ -1,4 +1,6 @@
-﻿# Appleseed MEG Dataset (BIDS)
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on007870-blue)](https://doi.org/10.82901/nemar.on007870)
+
+# Appleseed MEG Dataset (BIDS)
 
 This dataset contains the Appleseed MEG data in Brain Imaging Data Structure (BIDS) standard formnat. It includes MEG recordings from 12 participants listening to continuous narrative speech, plus an empty-room recording, along with stimulus files and derivative outputs. 
 
