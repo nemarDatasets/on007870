@@ -1,38 +1,94 @@
 {
   "version": "2.0",
-  "dataset_id": "on007870",
-  "source": "openneuro",
-  "source_id": "ds007870",
+  "pipeline_stage": "validated",
   "title": "Appleseed Audiobook MEG",
-  "authors": {
-    "Brodbeck, Christian": {},
-    "Bhattasali, Shohini": {},
-    "Cruz Heredia, Aura AL": {},
-    "Resnik, Philip": {},
-    "Simon, Jonathan Z": {},
-    "Lau, Ellen": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Brodbeck, Christian": {
+      "orcid": "0000-0001-8380-639X"
+    },
+    "Bhattasali, Shohini": {
+      "orcid": "0000-0002-6767-6529"
+    },
+    "Cruz Heredia, Aura AL": {},
+    "Resnik, Philip": {
+      "orcid": "0000-0002-6130-8602"
+    },
+    "Simon, Jonathan Z": {
+      "orcid": "0000-0003-0858-0698"
+    },
+    "Lau, Ellen": {}
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds007870.v1.3.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.7554/elife.72056",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on007870",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on007870",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "meg"
-  ],
-  "datatypes": [
-    "meg"
   ],
   "funding_references": [
     {
       "funder_name": "NIH"
     }
   ],
-  "acknowledgements": "Funding and support for this research"
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "meg"
+  ],
+  "resource_type_specific": "MEG Dataset",
+  "sizes": [
+    "36 B (1 files)"
+  ],
+  "formats": [
+    ".TextGrid",
+    ".cfg",
+    ".fif",
+    ".json",
+    ".md",
+    ".pickle",
+    ".py",
+    ".tsv",
+    ".yml"
+  ],
+  "description": "This dataset contains magnetoencephalography (MEG) recordings from 12 participants listening to continuous narrative speech, along with an empty-room recording, stimulus files, and derivatives. The dataset was collected to investigate how listeners integrate local and unified predictive linguistic models during speech perception, examining neural signatures of context-dependent processing across the superior temporal lobes.",
+  "methods_description": "MEG data were recorded while participants listened to continuous narrative speech and stored in FIFF format, processed and converted to BIDS using MNE-Python and MNE-BIDS. MRI data are not subject-specific anatomical scans but derived from the fsaverage template using subject-specific scaling parameters.",
+  "keywords": [
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "Speech Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
+    },
+    {
+      "term": "psycholinguistics"
+    },
+    {
+      "term": "predictive coding"
+    },
+    {
+      "term": "narrative speech"
+    },
+    {
+      "term": "superior temporal lobe"
+    }
+  ],
+  "source_hash": "61c755e8986e6928783559ac93346c8dbd41f719cfad94839e73561aefe1304a"
 }
